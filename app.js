@@ -1,3 +1,4 @@
+var PORT = process.env.PORT || 3000;
 var express=require("express"); 
 var bodyParser=require("body-parser"); 
 
@@ -47,9 +48,8 @@ res.set({
 	'Access-control-Allow-Origin': '*'
 	}); 
 return res.redirect('index.html'); 
-}).listen(3000) 
+}).listen(PORT) 
 
 
 
 console.log("server listening at port 3000"); 
-
